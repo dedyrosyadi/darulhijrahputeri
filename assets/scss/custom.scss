@@ -1,7 +1,6 @@
 @import "variable";
 @import "bs/scss/bootstrap";
-// @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-// @import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 * {
   font-family: 'Titillium Web', sans-serif;
@@ -17,11 +16,9 @@
 .navbar-default .navbar-toggle .icon-bar {background-color: #fff;}
 .navbar-toggle {border-radius: 0; margin-top:12px;}
 .navbar .navbar-collapse {max-height: 100%;}
-// .navbar-size .navbar-toggle {margin: 6px 12px 6px 0px; padding: 6px 7px 6px 7px;}
-// .navbar-size .navbar-toggle .icon-bar {width: 19px;}
 
 #main {
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .dropdown-menu {
@@ -51,7 +48,6 @@ h2, h3, h4{
 
 #slides {
   margin-bottom: 30px;
-  // padding-top: 120px;
 }
 
 input {
@@ -73,7 +69,6 @@ input[type=search] {
   border: solid 1px #ccc;
   padding: 5px 8px;
   width: 200px;  
-  // border-radius: 8px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s;
@@ -104,7 +99,6 @@ h1.title {
 }
 
 h2.title {
-  // padding: 10px;
   color:#fff;
   margin: 0 0 10px 0;
   font-size: 2em;
@@ -145,7 +139,6 @@ h2.title {
   }
 }
 
-
 a.show-button {
   background: $hijau;
   padding: 3px 8px;
@@ -165,7 +158,6 @@ a.show-button {
 #intro {
   h2 {
     color : $text;
-
   }
   color : $text;
   padding: 30px;
@@ -178,7 +170,6 @@ a.show-button {
   margin-bottom: 30px;
   padding: 20px;
   background: $hijau;
-
 
   ol {
     padding-left: 20px;
@@ -218,7 +209,6 @@ ul.list-artikel, ul.list-agenda, ul.list-pengumuman {
 }
 
 ul.list-agenda {
-  // padding: 0;
 
   li {
     list-style: none;
@@ -288,8 +278,6 @@ ul.list-artikel {
 }
 
 .navbar {
-  // display: block;
-  // min-height: 50px;
   border-radius: 0;
   margin-bottom: 0;
   border-bottom: solid 8px $hijau;
@@ -322,10 +310,8 @@ ul.list-artikel {
   bottom: 8px;
 
   img {
-    // margin-top: 0;
     max-width: 150px;
-
-    // padding: 10px;
+    padding: 10px;
   }
 }
 
@@ -345,27 +331,16 @@ ul.list-artikel {
   
   li {
     border: 1px #fff solid;
-    // border-radius: 50%;
     list-style: none;
     display: inline-block;
+    
     &:hover {
         background: darken($biru,10%);
       }
 
     a {
-      // margin-right: 5px;
-      // padding: 30px;
-      
-
       img {
         width: 35px;
-
-        // @include transition-duration(.5s);
-        // opacity: .8;
-
-        // &:hover {
-        //   opacity: 1;
-        // }
       }
     }
   }
@@ -432,19 +407,6 @@ footer {
 
 @media (min-width: 768px) {
 
-
-  // .navbar .navbar-nav li a
-  // {
-  //   padding: 0 !important;
-  // }
-  .navbar-nav > li > a {
-    // padding: 0 !important;  
-    // padding-top: 25px;
-    // padding-bottom: 25x;
-    // line-height: 27px;
-    // font-weight: 400;
-    // letter-spacing: 2px; 
-  }
 
 
 }
