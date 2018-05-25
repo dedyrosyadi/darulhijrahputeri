@@ -72,7 +72,7 @@ input[type=search] {
   font-size: 12px;
   border: solid 1px #ccc;
   padding: 5px 8px;
-  width: 150px;  
+  width: 200px;  
   // border-radius: 8px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -80,7 +80,7 @@ input[type=search] {
 }
 
 input[type=search]:focus {
-  width: 250px;
+  width: 100%;
   background-color: #fff;
   border-color: #66CC75;  
   -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
@@ -344,20 +344,28 @@ ul.list-artikel {
   }
   
   li {
+    border: 1px #fff solid;
+    // border-radius: 50%;
     list-style: none;
     display: inline-block;
+    &:hover {
+        background: darken($biru,10%);
+      }
 
     a {
-      margin-right: 5px;
+      // margin-right: 5px;
+      // padding: 30px;
+      
+
       img {
         width: 35px;
 
-        @include transition-duration(.5s);
-        opacity: .7;
+        // @include transition-duration(.5s);
+        // opacity: .8;
 
-        &:hover {
-          opacity: 1;
-        }
+        // &:hover {
+        //   opacity: 1;
+        // }
       }
     }
   }
@@ -375,12 +383,17 @@ footer {
 #search{
   padding: 10px 0;
   // margin-right: 15px;
+  display: flex;
+  justify-content : center;
 }
 
 // RESPONSIVE
 
 @media only screen and (max-width : 640px) {
   // responsive  
+  #kontak {
+    text-align: center;
+  }
 
   .dropdown-menu {
     border-top: 0 !important;
@@ -418,6 +431,7 @@ footer {
 }
 
 @media (min-width: 768px) {
+
 
   // .navbar .navbar-nav li a
   // {
