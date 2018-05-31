@@ -56,7 +56,7 @@ input {
 input[type=search] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
-  font-family: inherit;
+  // font-family: inherit;
   font-size: 100%;
 }
 input::-webkit-search-decoration,
@@ -75,12 +75,13 @@ input[type=search] {
 }
 
 input[type=search]:focus {
+  border-radius: none !important;
   width: 100%;
   background-color: #fff;
   border-color: #66CC75;  
-  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-  box-shadow: 0 0 5px rgba(109,207,246,.5);
+  // -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  // -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  // box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
 
 input:-moz-placeholder {
@@ -98,11 +99,39 @@ h1.title {
   margin :0 0 20px 0 !important;
 }
 
-h2.title {
-  color:#fff;
-  margin: 0 0 10px 0;
-  font-size: 2em;
-  padding-left: 10px;
+h2 {
+  .title {
+    margin: 0 0 10px 0;
+    font-size: 2em;
+    padding-left: 10px;
+    color:#fff;  
+  }
+}
+
+.date {
+  color: #a7a7a7;
+  font-size: 12px;
+
+}
+
+.post-title {
+  margin: 0 0 5px 0;
+  line-height: 17px;
+  > a {
+    font-size: .6em;
+    color: $hijau;
+  }
+}
+
+ul#all-post {
+  padding : 0;
+  li {
+    list-style: none;
+    margin: 0 0 10px 0;
+  }
+  
+  
+    
 }
 
 #full-artikel {
@@ -111,6 +140,7 @@ h2.title {
 
   }
   p {
+    margin-top: 20px;
     color:$text;
   }  
 }
